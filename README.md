@@ -46,10 +46,11 @@ Licensed under the GNU Affero General Public License version 3 or later.
 
 • senFinder is supposed to take two input files, one is the senFinder.rds trained model and the other one is the user input file. The input file should be formated as a csv as the following:
 
-| Sample_id | RRM2B | CPXM1 | PHGDH | PIK3IP1 | YIU2 | WASF1 | MRPS9 | TCF12 | DNAI3 | CAMK2N2 | NSD1 | MRPL11 | F8 | RPL10A | ISY1 | LUCAT1 | PURPL | CAPN10_DT | Lnc_PLOD2_2 | LINC00663 |
-|-----------|-------|-------|-------|---------|------|-------|-------|-------|-------|---------|------|--------|----|--------|------|--------|-------|----------------------|-----------|
-| A         | 30.72 | 1.59  | 27    | 5.75    | 5.47 | 4.25  | 10.24 | 44.57 | 4.69  | 0.06    | 14.85 | 22.76  | 2.21 | 802.64 | 17.77 | 1.35   | 3.4   | 0.65                 | 0.51      |
-| E         | 29.95 | 9.07  | 113.32| 20.58   | 12.85| 14.96 | 26.69 | 64.89 | 1     | 0.26    | 13.83 | 57.81  | 1.67| 1323.08| 34.63 | 0.87   | 0.66  | 0.24                 | 0.24      |
+| Sample_id | RRM2B  | CPXM1  | PHGDH  | PIK3IP1 | YIU2   | WASF1  | MRPS9  | TCF12  | DNAI3  | CAMK2N2 | NSD1   | MRPL11 | F8    | RPL10A  | ISY1   | LUCAT1 | PURPL  | CAPN10_DT | Lnc_PLOD2_2 | LINC00663 |
+|-----------|--------|--------|--------|---------|--------|--------|--------|--------|--------|---------|--------|--------|-------|---------|--------|--------|--------|-----------|------------|-----------|
+| A         | 30.72  | 1.59   | 27.00  | 5.75    | 5.47   | 4.25   | 10.24  | 44.57  | 4.69   | 0.06    | 14.85  | 22.76  | 2.21  | 802.64  | 17.77  | 1.35   | 3.40   | 0.65      | 0.51       | 2.40      |
+| E         | 29.95  | 9.07   | 113.32 | 20.58   | 12.85  | 14.96  | 26.69  | 64.89  | 1.00   | 0.26    | 13.83  | 57.81  | 1.67  | 1323.08 | 34.63  | 0.87   | 0.66   | 0.24      | 0.24       | 1.28      |
+
 
 
 The file should not have NA, Inf, use 0 instead through basic cleaning process. Here, each row is a sample and column comprises of  Sample_id and twenty  gene found from mRMR and incremental feature selcections. Use this twenty gene's TPM value.
